@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article>
+	<header>
+		<h2>IRM#{{ .Weight }} - {{ .Title }}</h2>
+		<p>IRM Author: {{ .Params.author }}</p>
+		<p>IRM version: {{ .Params.version }}</p>
+	</header>
+    {{ .Content }}
+</article>
+{{ end }}
