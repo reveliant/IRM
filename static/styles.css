@@ -1,0 +1,32 @@
+.step {
+    border: 1px slid grey;
+}
+.step h2 {
+    border-bottom: 1px solid grey;
+    font-weight: 600;
+}
+
+.step-preparation h2 {
+    background-color: #dae3e5;
+}
+
+.step-identification h2 {
+    background-color: #f1e2e8;
+}
+
+.step-containment h2 {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.step-remediation h2 {
+    background-color: #e60028;
+}
+
+.step-recovery h2 {
+    background-color: #dfe1c7;
+}
+
+.step-aftermath h2 {
+    background-color: #f0e7bc;
+}

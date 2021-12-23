@@ -1,10 +1,25 @@
 {{ define "main" }}
 <article>
-	<header>
-		<h2>IRM#{{ .Weight }} - {{ .Title }}</h2>
-		<p>IRM Author: {{ .Params.author }}</p>
-		<p>IRM version: {{ .Params.version }}</p>
+	<header class="px-4 pt-3 pb-2 mb-4 bg-light rounded-bottom">
+		<p class="lead">{{ .Description }}</p>
+		<p>
+			IRM Author: {{ .Params.author }}<br>
+			IRM version: {{ .Params.version }}
+		</p>
+
+		{{ .TableOfContents }}
 	</header>
     {{ .Content }}
+	{{- range .Resources }}
+	<section class="step step-{{ .Title | lower }} mb-4 bg-light rounded-3" id="{{ .Title | lower }}">
+		<h2 class="px-3 py-2 rounded-top">{{ .Weight }}. {{ .Title }}</h2>
+		<div class="pb-2 m-3">
+			{{- if .Params.objective }}
+			<p class="lead"><b>Objective</b>: {{ .Params.objective | markdownify }}</p>
+			{{- end }}
+			{{ .Content }}
+		</div>
+	</section>
+	{{- end }}
 </article>
 {{ end }}

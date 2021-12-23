@@ -1,9 +1,18 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ .Content }}
-
-{{ range .Site.RegularPages }}
-{{ .Render "single" }}
-{{ end }}
-
+<div class="row mt-3 mx-2">
+    <article class="col-md-8">
+        {{ .Content }}
+    </article>
+    <aside class="col-md-4">
+        <nav>
+            <ul class="nav flex-column">
+            {{- range .Site.RegularPages }}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ .RelPermalink }}">{{ partial "irm-title" . }}</a>
+                </li>
+            {{- end }}
+            </ul>
+        </nav>
+    </aside>
+</div>
 {{ end }}
