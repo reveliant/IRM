@@ -1,9 +1,9 @@
 ---
 title: Incident Response Methodology
 ---
-## Abstract
+### Abstract
 
-This Incident Response Methodology is a cheat sheet dedicated to incident handlers investigating a precise security issue.
+These Incident Response Methodologies are cheat sheets dedicated to incident handlers investigating precise security issues.
 
 Who should use IRM sheets ?
 
@@ -14,7 +14,7 @@ Who should use IRM sheets ?
 
 **Remember: If you face an incident, follow IRM, take notes and do not panic. Contact your CERT immediately if needed.**
 
-## Incident handling steps
+### Incident handling steps
 
 6 steps are defined to handle security incidents
 
@@ -26,4 +26,3 @@ Who should use IRM sheets ?
 6. **Aftermath**: draw up and improve the process
 
 **IRM provides detailed information for each step.**
-
