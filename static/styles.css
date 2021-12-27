@@ -1,32 +1,74 @@
-.step {
-    border: 1px slid grey;
+.irm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(var(--bs-light-rgb));
+    border-radius: .5em;
+    margin-bottom: 1.5em;
+    padding: 1em 1.75em;
 }
-.step h2 {
-    border-bottom: 1px solid grey;
+.irm-header .step-header {
+    display: inline-block;
+    min-width: 1.75em;
+    text-align: center;
+    font-size: .85em;
     font-weight: 600;
+    padding: 0 .4em .1em;
+    border: 1px solid grey;
+    border-radius: .5em;
+    color: black;
 }
 
-.step-preparation h2 {
+.step {
+    border: 1px slid grey;
+    border-radius: .5em;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    background-color: rgb(var(--bs-light-rgb));
+}
+.step .step-header {
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-clip: border-box;
+}
+.step-title {
+    display: block;
+    padding: .25em .5em;
+    margin: 0;
+    font-weight: 600;
+}
+.step-number {
+    display: block;
+    padding: 0 .75em;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: rgb(var(--bs-dark-rgb));
+    color: rgb(var(--bs-light-rgb));
+}
+
+.step-preparation .step-header {
     background-color: #dae3e5;
 }
 
-.step-identification h2 {
+.step-identification .step-header {
     background-color: #f1e2e8;
 }
 
-.step-containment h2 {
+.step-containment .step-header {
     background-color: #000000;
     color: #ffffff;
 }
 
-.step-remediation h2 {
+.step-remediation .step-header {
     background-color: #e60028;
 }
 
-.step-recovery h2 {
+.step-recovery .step-header {
     background-color: #dfe1c7;
 }
 
-.step-aftermath h2 {
+.step-aftermath .step-header {
     background-color: #f0e7bc;
 }
