@@ -3,7 +3,7 @@
     <article class="col-md-7">
         {{ .Content }}
     </article>
-    <aside class="col-md-5">
+    <aside class="col-md-5 d-flex flex-column justify-content-between">
         <nav>
             <ul class="nav flex-column">
             {{- range .Site.RegularPages }}
@@ -14,6 +14,10 @@
             {{- end }}
             </ul>
         </nav>
+        <div>
+            Based on <a href="https://github.com/certsocietegenerale/IRM/">CERT Société Générale's IRM</a>
+            licensed under <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+        </div>
     </aside>
 </div>
 {{ end }}
