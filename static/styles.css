@@ -2,13 +2,14 @@
     background-color: rgb(var(--bs-light-rgb));
     border-radius: .5em;
     margin-bottom: 1.5em;
-    padding: 1em 1.75em;
+    padding: 1em;
 }
 @media (min-width: 576px) {
     .irm-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 1em 1.75em;
     }
 }
 .irm-header .step-header {
