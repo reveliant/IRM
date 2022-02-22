@@ -18,9 +18,9 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-md">
-                <a class="navbar-brand ms-4" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+                <a class="navbar-brand ms-md-4" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
                 {{- if not .IsHome }}
-                <span class="navbar-brand mr-4 fw-light">{{ partial "irm-title" . }}</a>
+                <span class="navbar-brand me-md-4 fw-light">{{ partial "irm-title" . }}</a>
                 {{- end }}
             </div>
         </nav>
