@@ -1,4 +1,4 @@
-#baseURL = 'http://example.org/'
+baseURL = 'https://incident.ninja/'
 languageCode = 'en-us'
 title = 'Incident Response Methodology'
 disableKinds = ['taxonomy', 'term', 'RSS']
