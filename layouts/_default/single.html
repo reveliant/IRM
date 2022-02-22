@@ -4,8 +4,8 @@
 		<div>
 			<p class="lead">{{ .Description }}</p>
 			<p>
-				IRM Author: {{ .Params.author }}<br>
-				IRM version: {{ .Params.version }}
+				{{ i18n "irm_author" }} {{ .Params.author }}<br>
+				{{ i18n "irm_version" }} {{ .Params.version }}
 			</p>
 		</div>
 		<nav>
@@ -14,7 +14,7 @@
 				<li class="nav-item step-{{ .Title | lower }}">
 					<a href="#{{ .Title | lower }}" class="nav-link link-secondary p-0">
 						<span class="step-header">{{ .Weight }}</span>
-						{{ .Title }}
+						{{ i18n .Title }}
 					</a>
 				</li>
 			{{- end }}
@@ -25,7 +25,7 @@
 	{{- range .Resources.ByType "page" }}
 	<section class="step step-{{ .Title | lower }}" id="{{ .Title | lower }}">
 		<header class="step-header">
-			<h2 class="step-title">{{ .Title }}</h2>
+			<h2 class="step-title">{{ i18n .Title }}</h2>
 			<span class="step-number">{{ .Weight }}</span>
 		</header>
 		<div class="m-3">

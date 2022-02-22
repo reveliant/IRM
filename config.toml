@@ -2,3 +2,10 @@
 languageCode = 'en-us'
 title = 'Incident Response Methodology'
 disableKinds = ['taxonomy', 'term', 'RSS']
+defaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    contentDir = "content/"
+    weight = 1
