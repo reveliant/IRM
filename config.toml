@@ -1,6 +1,6 @@
 baseURL = 'https://incident.ninja/'
 languageCode = 'en-us'
-title = 'Incident Response Methodology'
+title = 'Incident Ninja Response Methodologies'
 disableKinds = ['taxonomy', 'term', 'RSS']
 defaultContentLanguage = "en"
 
