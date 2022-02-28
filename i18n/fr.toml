@@ -1,0 +1,26 @@
+[credits]
+other = "Basé sur les <a href=\"https://github.com/certsocietegenerale/IRM/\">fiches IRM du CERT Société Générale</a> sous licence <a href=\"https://creativecommons.org/licenses/by/3.0/deed.fr\">Creative Commons Attribution 3.0 non transposée</a>."
+
+[irm_author]
+other = "Auteur de la fiche IRM :"
+
+[irm_version]
+other = "Version de la fiche IRM :"
+
+[Preparation]
+other = "Préparation"
+
+[Identification]
+other = "Identification"
+
+[Containment]
+other = "Endiguement"
+
+[Remediation]
+other = "Remédiation"
+
+[Recovery]
+other = "Rétablissement"
+
+[Aftermath]
+other = "Suites"

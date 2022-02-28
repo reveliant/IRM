@@ -9,3 +9,7 @@ defaultContentLanguage = "en"
     languageName = "English"
     contentDir = "content/"
     weight = 1
+  [languages.fr]
+    languageName = "Français"
+    contentDir = "content/FR"
+    weight = 1
