@@ -9,7 +9,7 @@ Look for any suspicious entry in `/etc/passwd`, especially with UID 0. Also chec
 Look for orphaned files, which could have been left by a deleted account used in the attack:
 
 ```shell-session
-# find / \( -nouser –o –nogroup \) -print
+# find / \( -nouser -o -nogroup \) -print
 ```
 
 ### Unusual Files
@@ -17,21 +17,21 @@ Look for orphaned files, which could have been left by a deleted account used in
 - Look for all SUID and GUID files:
 
   ```shell-session
-  # find / -uid 0 \( –perm -4000 –o –perm 2000 \) –print
+  # find / -uid 0 \( -perm -4000 -o -perm 2000 \) -print
   ```
 
 - Look for weird file names, starting with `.` or `..` or ` ` :
 
   ```shell-session
-  # find / -name " *" –print
-  # find / -name ".*" –print
-  # find / -name "..*" –print
+  # find / -name " *" -print
+  # find / -name ".*" -print
+  # find / -name "..*" -print
   ```
 
 - Look for large files (here: larger than 10MB)
 
   ```shell-session
-  # find / -size +10MB –print
+  # find / -size +10MB -print
   ```
 
 - Look for processes running from or to files which have been unlinked :
@@ -57,7 +57,7 @@ Look at the running processes (remember: a rootkit might change your results for
 # ps -aux
 ```
 
-Use `lsof –p [pid]` on unknown processes
+Use `lsof -p [pid]` on unknown processes
 
 You should know your usual running processes, and be able to figure out which processes could have been added by a hacker. Pay a special attention to the processes running under UID 0.
 
@@ -70,7 +70,7 @@ Look at your kernel log files for interfaces entering promiscuous mode such as: 
 Use `# ip link` to detect the `PROMISC` flag. Prefer this method
 to ifconfig, since ifconfig does not work on all kernels.
 
-- Look for unusual port activity: `# netstat –nap` and `# lsof –i` to get more information about processes listening to ports.
+- Look for unusual port activity: `# netstat -nap` and `# lsof -i` to get more information about processes listening to ports.
 
 - Look for unusual MAC entries in your LAN:
 
@@ -85,10 +85,10 @@ to ifconfig, since ifconfig does not work on all kernels.
 - Look for unusual jobs scheduled by users mentioned in `/etc/cron.allow`. Pay a special attention to the cron jobs scheduled by UID 0 accounts (root):
 
   ```shell-session
-  # crontab –u root -l
+  # crontab -u root -l
   ```
 
-- Look for unusual system-wide cron jobs: `# cat /etc/crontab` and `# ls –la /etc/cron.*`
+- Look for unusual system-wide cron jobs: `# cat /etc/crontab` and `# ls -la /etc/cron.*`
 
 ### Unusual Log Entries
 
@@ -145,8 +145,8 @@ Verify all MD5 hashes of your binaries in `/bin`, `/sbin`, `/usr/bin`, `/usr/sbi
 
 **WARNING**: this operation will probably change all file timestamps. This should only be done after all other investigations are done and you feel like you can alter these data.
 
-- On systems with RPM installed, use: `# rpm –Va | sort`
+- On systems with RPM installed, use: `# rpm -Va | sort`
 - On some Linux, a script named `check-packages` can be used.
-- On Solaris: `# pkg_chk –vn`
-- On Debian: `debsums –ac`
+- On Solaris: `# pkg_chk -vn`
+- On Debian: `debsums -ac`
 - On Openbsd (not really this but a way): `pkg_delete -vn

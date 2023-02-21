@@ -83,21 +83,21 @@ Use `psexplorer` if possible.
 - Check for any suspicious Netbios connexion:
 
   ```console
-  C:\> nbtstat –S
+  C:\> nbtstat -S
   ```
 
 - Look for any suspicious activity on the system’s ports :
 
   ```console
-  C:\> netstat –na 5
+  C:\> netstat -na 5
   ```
 
   (5 makes it being refreshed each 5 seconds)
 
-  Use `–o` flag for Windows XP/2003 to see the owner of each process:
+  Use `-o` flag for Windows XP/2003 to see the owner of each process:
 
   ```console
-  C:\> netstat –nao 5
+  C:\> netstat -nao 5
   ```
 
   Use `fport` if possible.
