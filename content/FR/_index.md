@@ -3,7 +3,7 @@ title: Incident Response Methodology
 ---
 ### Résumé
 
-Ces méthodologies de réponse à incident (*Incident Response Methodologies*, IRM) sont des pense-bêtes dédés aux analystes investigants sur des incidents de sécurité spécifiques.
+Ces méthodologies de réponse à incident (*Incident Response Methodologies*, IRM) sont des pense-bêtes dédiés aux analystes investigant sur des incidents de sécurité spécifiques.
 
 Qui peut utiliser les fiches IRM ?
 
@@ -12,7 +12,7 @@ Qui peut utiliser les fiches IRM ?
 - RSSI et adjoints
 - Analystes réponse à incident (*Computer Emergency Response Team* / *Computer Security Incident Response Team*)
 
-**Rappelez-vous: Si vous êtes confronté à un incident, suivez la fiche IRM, prenez des notes et ne paniquez pas. Contactez immédiatement votre CERT si nécessaire.**
+**Rappelez-vous : Si vous êtes confronté à un incident, suivez la fiche IRM, prenez des notes et ne paniquez pas. Contactez immédiatement votre CERT / CSIRT si nécessaire.**
 
 ### Étapes de gestion d'un incident
 
